@@ -2,9 +2,11 @@
     background-color: #ffffff;
     color: #000000;
     margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;
 }
 .logo{
-    width: 250px;
+    width: 15px;
     margin-left: auto;
     margin-right: auto;
 }
