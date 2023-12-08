@@ -3,12 +3,20 @@
     color: #000000;
     margin: 0 !important;
     padding: 0;
+    font-size: 20px;
     box-sizing: border-box;
 }
+/*header{
+    display: inline-block;
+}*/
+h1, nav{
+    font-family: 'Ephesis';
+    font-weight: bold;
+}
 .logo{
-    width: 15px;
-    margin-left: auto;
-    margin-right: auto;
+ 
+    
+
 }
 nav{
     width: 100%;
@@ -25,6 +33,39 @@ h1, h2{
     font-size: 40px;
     line-height: 60px;
     margin-bottom: 14px;
+}
+
+ol{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 26px;
+    height: 43px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+ol a{
+    /*color: #f4f4f4;*/
+    /*color: #DBB0EF;*/
+    text-decoration: none;
+    display: block;
+    background-color: #f4f4f4;
+}
+ol > li{
+    float: left;
+    width: 150px;
+    height: 40px;
+    
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
 }
 
 @media (min-width: 800px) {
