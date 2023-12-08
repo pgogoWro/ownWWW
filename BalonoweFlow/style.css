@@ -67,6 +67,9 @@ ol > li{
 	top: 0;
 	z-index: 100;
 }
+main{
+    width: 1000px;
+}
 
 @media (min-width: 800px) {
     .logo{
@@ -78,6 +81,10 @@ ol > li{
         font-size: 52px;
         line-height: 78px;
         margin-bottom: 20px;
+    }
+    ol{
+        font-size: 30px;
+        height: 47px;
     }
     
 }
