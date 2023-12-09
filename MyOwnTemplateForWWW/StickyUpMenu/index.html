@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StickyMenu</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id arcu tempus, fringilla massa in, luctus urna. Curabitur finibus commodo faucibus. Aliquam erat volutpat. Morbi sodales orci venenatis urna suscipit finibus. Cras volutpat lorem vel porta efficitur. Integer sem tortor, tristique facilisis ante vitae, ullamcorper faucibus metus. Aenean tincidunt justo quis est vehicula, ut tincidunt quam finibus.</p>
+        <p>Praesent faucibus ullamcorper mi, non finibus leo porta sit amet. Phasellus tristique pretium dui et tempus. Nunc turpis purus, tempor scelerisque maximus eu, mollis a dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque auctor, ipsum in venenatis maximus, erat elit pretium erat, eget viverra neque augue sit amet enim. Suspendisse tempus velit scelerisque metus cursus tincidunt. Aliquam et condimentum arcu. Nullam pretium, ligula quis cursus blandit, libero ipsum efficitur mi, eu tempus orci magna a ante. Vestibulum hendrerit, purus sit amet porta consectetur, augue ligula venenatis orci, malesuada tempor massa nisi ac nulla. Nam pulvinar et lacus eget accumsan. Mauris fringilla a tellus non tristique. Integer fermentum elit tortor, pharetra accumsan mauris commodo quis.</p>
+        <p>Quisque semper neque viverra, bibendum ex id, lobortis mi. Proin sed dolor fringilla, blandit nibh et, molestie velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer mauris tortor, aliquam pulvinar feugiat eget, tempor et nisl. Mauris efficitur auctor vehicula. Duis eu sapien non nunc tempor lobortis quis id erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras fringilla scelerisque velit sit amet commodo. Vivamus nec pretium libero. Nunc venenatis euismod iaculis. Integer sit amet massa tellus. Aenean vitae ipsum vitae tellus mollis ornare et a velit.</p>
+        <p>Donec ullamcorper viverra risus ut efficitur. Proin a ultricies urna, dapibus pretium felis. Morbi pharetra, leo id feugiat consequat, est tortor ultricies diam, sit amet pellentesque felis dolor id orci. Praesent dictum sodales justo et imperdiet. Curabitur pulvinar felis tempor nisl porttitor, a lobortis quam ullamcorper. Donec sit amet quam iaculis, iaculis quam vel, ultrices dui. Sed vehicula lacus odio. In hac habitasse platea dictumst. Quisque nec fermentum arcu. Quisque molestie consectetur mi sit amet pulvinar. Suspendisse venenatis lorem id nunc lobortis, non porttitor sem cursus.</p>
+        <p>Proin justo augue, sagittis at egestas at, consequat vel tellus. In sed facilisis sapien, eget lobortis arcu. Proin id eros eget quam sodales sagittis. Fusce ac rutrum ligula. Integer imperdiet sem vestibulum erat mollis, sit amet venenatis dolor convallis. Etiam mi enim, malesuada eu libero vel, euismod malesuada nibh. Morbi ornare nisl non quam dignissim congue. Curabitur ultricies maximus ultricies. In hac habitasse platea dictumst.</p>
+        <p>Nulla facilisi. Curabitur orci justo, ullamcorper sit amet mauris ut, semper consectetur orci. Vestibulum id mauris consequat, viverra ante non, viverra libero. Donec commodo arcu eget eros tristique euismod. Cras non faucibus diam. Mauris rhoncus, ante sit amet gravida consectetur, elit eros euismod turpis, sit amet viverra turpis justo eu tellus. Ut et dapibus ipsum, id condimentum magna. Sed vulputate justo mauris. Suspendisse sit amet fermentum tellus. Integer venenatis nisi quis urna sollicitudin bibendum. Vivamus a tortor ligula. Cras maximus et tellus vel dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+    </main>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var navigationY = $('nav').offset().top;
+            var stickyNavigation=function(){
+                var scrollY=$(window).scrollTop();
+                if(scrollY>navigationY){
+                    $('nav').addClass('sticky');
+                }else{
+                    $('nav').removeClass('sticky');
+                }
+                };
+                stickyNavigation();
+
+                $(window).scroll(function(){
+                    stickyNavigation();
+                });
+            });
+    </script>
+</body>
+</html>
