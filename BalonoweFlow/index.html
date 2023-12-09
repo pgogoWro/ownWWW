@@ -11,18 +11,22 @@
 </head>
 <body>
 <header>
-    <div class="logo"> 
-        <img src="./Pictures/logo.png" style="float: left;" alt="Balonowe Flow"></div>
-    <div>
+
         <nav>
             <ol>
+                <li>    
+
+                    <img src="./Pictures/logo.png" style="float: left;" alt="Balonowe Flow" width="125px" height="125px">
+
+
+                </li>
                 <li><a href="#Start">Start</a></li>
                 <li><a href="#Realizacje">Realizacje</a></li>
                 <li><a href="#Oferta">Oferta</a></li>
                 <li><a href="#Kontakt">Kontakt</a></li>
             </ol>
         </nav>
-    </div style="clear:both;">
+
 </header>
     <main>
         <section id="Start">
@@ -68,7 +72,26 @@
         </section>
     
     </main>
-    <script src="jquery-1.11.3.min.js"></script>
-    <script src="code.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var navigationY = $('nav').offset().top;
+        var stickyNavigation=function(){
+            var scrollY=$(window).scrollTop();
+            if(scrollY>navigationY){
+                $('nav').addClass('sticky');
+            }else{
+                $('nav').removeClass('sticky');
+            }
+            };
+            stickyNavigation();
+    
+            $(window).scroll(function(){
+                stickyNavigation();
+            });
+        });
+</script>
+
+
 </body>
 </html>
