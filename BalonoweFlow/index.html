@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Corinthia:wght@700&family=Ephesis&family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-<header>
+<!--<header>
 
         <nav>
             <ol>
@@ -21,7 +21,7 @@
             </ol>
         </nav>
 
-</header>
+</header>-->
     <main>
         
             <div class="slider">
@@ -79,7 +79,7 @@
                 </div>
             </div>
         
-        <section id="Realizacje">
+<!--       <section id="Realizacje">
             <h1>Realizacje</h1>
             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus tempore illum assumenda vel quod consequatur officiis cupiditate ea alias. Animi, autem rem nemo sequi maiores odit eum blanditiis architecto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto obcaecati facere dolor ullam facilis ad harum, consectetur fuga ab ut ratione dolorem quia rerum sapiente et quod assumenda vitae cupiditate sint non reprehenderit sunt fugiat tempore. Consectetur tenetur reiciendis maiores consequuntur similique voluptatem tempora deleniti quasi ducimus minus, suscipit veritatis blanditiis ullam voluptates a iusto, sint enim nulla voluptate cupiditate, dolore praesentium est distinctio illum. Veritatis amet cumque odio nihil, exercitationem praesentium aliquid inventore voluptate ad ut hic fugit laboriosam neque placeat nemo eveniet dolores sequi animi provident quas molestias labore! Fuga qui neque est eius inventore, repellat provident unde.</div>
         </section>
@@ -93,14 +93,25 @@
             Kontakt
         </section>
 
-        <footer> </footer>
+        <footer> </footer>>
    
-
+--> 
     
     </main>
     <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="js/sticky.js"></script>
     <script type="text/javascript" src="js/slideshow.js"></script>
+    <script>
+        var counter = 1;
+setInterval(function(){
+    document.getElementById('rad' + counter).checked = true;
+    counter++;
+
+    if(counter>4){
+        counter = 1;
+    }
+}, 1000);
+    </script>
 
 
 
