@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* background-image: url('img/start.jpeg'); */
+  
 }
 
 body {
@@ -12,7 +14,16 @@ body {
   justify-content: center;
   align-items: center; */
   color: #080808;
-  background: linear-gradient(110deg, #F893F2 0%, #FFCAFF 100%);
+ /*  background-image: url('img/start.jpeg'); */
+  /* background: linear-gradient(110deg, #e5caf0 0%, #f2dcfa 100%); */
+}
+main{
+  justify-content: center;
+  margin: auto;
+  width: 1000px;
+  /* background-image: url('../img/start.jpeg'); */
+  position: relative;
+  /* background: linear-gradient(110deg, #e5caf0 0%, #f2dcfa 100%); */
 }
 
 a {
@@ -22,13 +33,15 @@ a {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* nav styles */
+/* navigation menu styles */
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 0;
+  background-color: #f2dcfa;
+
 }
 
 .logo {
@@ -44,6 +57,7 @@ a {
 .hidden {
   padding-right: 20px;
   cursor: pointer;
+
 }
 
 .hidden .line {
@@ -52,6 +66,7 @@ a {
   height: 5px;
   margin-bottom: 10px;
   background-color: black;
+
 }
 
 .linkNav {
@@ -60,6 +75,7 @@ a {
   top: 5rem;
   left: 18px;
   background-color: lightblue;
+  z-index: 100;
 }
 
 .linkNav a {
@@ -75,7 +91,7 @@ a {
 .hide {
   display: none;
 }
-
+/* Realizacje styles/slider */
 .container{
   position: relative;
   width: 800px;
@@ -97,7 +113,7 @@ a {
 .card{
   width: 800px;
   min-height: 100%;
-  background: #fff;
+  background: #f2dcfa;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -130,7 +146,7 @@ a {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   padding: 5px 20px;
-  background: #fff;
+  background: #f2dcfa;
   text-transform: capitalize;
   font-size: 14px;
 }
@@ -178,7 +194,7 @@ a {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid #f2dcfa;
   cursor: pointer;
   margin-left: 5px;
   transition: .5s;
@@ -187,9 +203,47 @@ a {
 button.active{
   width: 40px;
   border-radius: 50px;
-  background: #fff;
+  background: #f2dcfa;
 }
-
+/* home styles */
+#home{
+  /* margin: auto; */
+  margin-top: 200px;
+  margin-bottom: 50px;
+  position: relative;
+}
+#homeTekst{
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  right: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  color: #e6c2f4;
+  letter-spacing: 5px;
+  z-index: 90;
+}
+/* h1 style */
+h1{
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  padding: 50px;
+}
+/* offer style */
+#offerPic{
+  max-width: 200px;
+  max-height: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+}
+#offerText{
+  padding: 10px;
+  max-width: 800px;
+  text-align: justify;
+}
 @media screen and (min-width: 600px) {
   .linkNav {
     display: block;
