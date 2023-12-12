@@ -1,0 +1,57 @@
+
+
+@media screen and (min-width: 800px){
+    /* main style */
+    header{
+        width: 100%;
+        background-color: rgb(161, 82, 235);
+    }
+    main{
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    footer{
+        width: 100%;
+        background-color: rgb(161, 82, 235);
+    }
+    /* nav style */
+    .linkNav{
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+    .linkNav a{
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    .mobile{
+        display: none;
+    }
+    a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+    }
+    .logo{
+        padding-left: 20px;
+        font-family: 'Ephesis';
+        font-size: 4rem;
+        letter-spacing: 5px;
+        text-transform: none;
+    }
+    .linkNav a:hover{
+        background-color: #e458e3;
+    }
+}
