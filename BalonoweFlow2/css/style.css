@@ -115,7 +115,7 @@ a {
   min-height: 100%;
   background: #f2dcfa;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px #0000001a;
   display: flex;
   /* flex-direction: column; */
   justify-content: center;
@@ -139,7 +139,7 @@ a {
   object-fit: cover;
 }
 
-.client-name{
+/* .client-name{
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -149,7 +149,7 @@ a {
   background: #f2dcfa;
   text-transform: capitalize;
   font-size: 14px;
-}
+} */
 
 .card-body{
   width: 120%;
@@ -166,14 +166,14 @@ a {
   margin-top: 30px;
 }
 
-.rating{
+/* .rating{
   position: absolute;
   bottom: 10px;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .star{
   width: 25px;

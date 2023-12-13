@@ -4,17 +4,19 @@
     /* main style */
     header{
         width: 100%;
-        background-color: rgb(161, 82, 235);
+        background-color: #d9bad9;
+        border-radius: 10px;
     }
     main{
-        width: 1000px;
+        width: 1400px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
     footer{
         width: 100%;
-        background-color: rgb(161, 82, 235);
+        background-color: #e1bcff;
+        border-radius: 10px;
     }
     /* nav style */
     .linkNav{
@@ -52,6 +54,116 @@
         text-transform: none;
     }
     .linkNav a:hover{
-        background-color: #e458e3;
+        background-color: #b75dff;
+        border-radius: 10px;
     }
+    /* style 1 section home*/
+    #home{
+        width: 100%;
+        font-size: 4rem;
+        background-size: cover;
+        filter: blur(1px);
+        justify-content: center;
+        
+    }
+    #home img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        filter: blur(1rem);
+    }
+    #homeText{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        text-shadow: 0.1rem 0.1rem 0.2rem #d9bad9;
+        
+    }
+    /* style realization section - slider */
+    .relContainer{
+        /* width: 1000px; */
+        position: relative;
+        min-width: 1000px;
+        min-height: 500px;
+        padding-bottom: 40px;
+        overflow: hidden;
+        margin: auto;
+
+    }
+    .relWrapper{
+        width: 600%;
+        min-height: 100%;
+        display: flex;
+        justify-content: space-between;
+        transition: 1s;
+        
+    }
+    .relCard{
+        /* width: 1000px; */
+        min-height: 100%;
+        background: #e1bcff;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px #e1bcff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0 10px;
+    }
+    .relCardThumb{
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        border-radius: 10px;
+/*         border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px; */
+        position: relative;
+    }
+    .clientImg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .cardBodyText{
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        margin-left: 0px;
+        position: relative;
+        padding-bottom: 50px;
+    }
+    .review{
+        font-size: 1.6rem;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    .buttonsSlider{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .buttonsSlider button{
+        background: none;
+        border: none;
+        outline: none;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: 2px solid #e1bcff;
+        cursor: pointer;
+        margin-left: 5px;
+        transition: .5s;
+    }
+    button.active{
+        width: 4rem;
+        border-radius: 50px;
+        background: #e1bcff;
+    }
+
 }
